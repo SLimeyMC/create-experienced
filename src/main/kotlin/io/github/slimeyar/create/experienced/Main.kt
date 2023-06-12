@@ -1,7 +1,6 @@
-package io.github.slimeyar.createexperienced
+package io.github.slimeyar.create.experienced
 
 import net.fabricmc.api.ModInitializer
-
 
 class Main: ModInitializer {
 
@@ -11,6 +10,5 @@ class Main: ModInitializer {
     }
 
     override fun onInitialize() {
-        val EXPERIENCE
     }
 }
