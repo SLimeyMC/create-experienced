@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "fluid": "createexperienced:experience_fluid",
+      "amount": 8000
+    }
+  ],
+  "results": [
+    {
+      "item": "createexperienced:experience_bucket"
+    }
+  ]
+}

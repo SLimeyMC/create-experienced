@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "create:experience_nugget"
+    }
+  ],
+  "results": [
+    {
+      "item": "createexperienced:amplified_experience_nugget"
+    }
+  ]
+}

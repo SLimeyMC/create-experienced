@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createexperienced:amplified_experience_nugget"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createexperienced:experience_fluid",
+      "count": 1850
+    }
+  ],
+  "heatRequirement": "heated"
+}
