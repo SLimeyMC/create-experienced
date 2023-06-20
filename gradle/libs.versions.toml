@@ -4,10 +4,8 @@ minecraft = "1.19.2"
 fabric_loader = "0.14.19"
 fabric_api = "0.76.0+1.19.2"
 fabric_language_kotlin = "1.9.4+kotlin.1.8.21"
-create = "0.5.0.i-1017+1.19.2" # You must scroll down to edit the verstion
-#nightconfigcore = "3.6.6"
-#nightconfigtoml = "3.6.6"
-#forge_config_port_api = "v3.2.4-1.18.2"
+create = "0.5.1-b-build.1079+mc1.19.2" # You must scroll down to edit the verstion
+cobblegen = "4.0.4+15-BETA"
 emi = "1.0.2+1.19.2"
 modmenu = "4.2.0-beta.2"
 
@@ -23,6 +21,9 @@ kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", ver
 
 # Create
 create = { module = "com.simibubi.create:create-fabric-1.19.2", version.ref = "create" }
+
+# Cobblegen
+cobblegen = { module = "maven.modrinth:cobblegen", version.ref = "cobblegen" }
 
 emi = { module = "dev.emi:emi-fabric", version.ref = "emi" }
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }

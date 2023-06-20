@@ -6,6 +6,7 @@ plugins {
     `kotlin-dsl`
 	id ("fabric-loom") version "1.0.+"
 	id ("io.github.juuxel.loom-quiltflower") version "1.+" // Quiltflower, a better decompiler
+    id ("org.jetbrains.kotlin.jvm") version "1.8.21"
 	id ("maven-publish")
 }
 
@@ -24,7 +25,7 @@ repositories {
 	maven { url = uri("https://dvs1.progwml6.com/files/maven/") }
 	maven { url = uri("https://maven.parchmentmc.org") } // Parchment mappings
 	maven { url = uri("https://maven.quiltmc.org/repository/release") } // Quilt Mappings
-	maven { url = uri("https://api.modrinth.com/maven") }
+	maven { url = uri("https://api.modrinth.com/maven") } // Cobblegen
 	maven { url = uri("https://maven.terraformersmc.com/") } // Mod Menu, EMI
 	maven { url = uri("https://mvn.devos.one/snapshots/") } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
 	maven { url = uri("https://cursemaven.com") } // Forge Config API Port
@@ -37,13 +38,6 @@ dependencies {
 	// Setup
 	minecraft(libs.minecraft)
     mappings("net.fabricmc", "yarn", rootProject.property("yarn_mappings").toString(), null, "v2")
-    // No tutorial aaa
-//    @Suppress("UnstableApiUsage")
-//    mappings(loom.layered {
-//        mappings("org.quiltmc:quilt-mappings:${property("minecraft_version")}+build.${property("qm_version")}:intermediary-v2")
-//        parchment("org.parchmentmc.data:parchment-${property("minecraft_version")}:${property("parchment_version")}@zip")
-//        officialMojangMappings { nameSyntheticMembers = false }
-//    })
     modImplementation(libs.fabric.loader)
 
 	// dependencies
@@ -52,6 +46,8 @@ dependencies {
 
 	// Create - dependencies are added transitively
 	modImplementation(libs.create)
+
+    modApi(libs.cobblegen)
 
 	// Development QOL
 	modLocalRuntime(libs.emi)

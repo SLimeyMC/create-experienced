@@ -8,7 +8,7 @@
     "Slimeyar"
   ],
   "license": "MIT",
-  "icon": "assets/cexp/icon.png",
+  "icon": "assets/createexperienced/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -16,14 +16,29 @@
       "adapter": "kotlin",
       "value": "io.github.slimeyar.create.experienced.Main"
       }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.slimeyar.create.experienced.Client"
+      }
+    ],
+    "cobblegen_plugin": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.slimeyar.create.experienced.ExperienceFluidReactionHandler"
+      }
     ]
   },
   "depends": {
     "fabricloader": "*",
     "fabric-api": "0.76.0+1.19.2",
-    "fabric-language-kotlin": ">=1.9.4+kotlin.1.8.0",
-    "create": "0.5.0.i-1017+1.19.2",
+    "fabric-language-kotlin": ">=1.9.4+kotlin.1.8.21",
+    "create": "0.5.1-b-build.1079+mc1.19.2",
     "minecraft": "1.19.2"
+  },
+  "suggests": {
+    "cobblegen": "4.0.4"
   },
   "custom": {
     "modmenu": {
